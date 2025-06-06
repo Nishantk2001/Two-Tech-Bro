@@ -1,0 +1,404 @@
+.hero {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(to bottom right, #f8fafc, #eff6ff);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.heroContainer {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+@media (min-width: 640px) {
+  .heroContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroContainer {
+    padding: 0 2rem;
+  }
+}
+
+.heroContent {
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 3.75rem;
+  }
+}
+
+.heroHighlight {
+  color: #2563eb;
+}
+
+.heroSubtitle {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: #475569;
+}
+
+.heroButtons {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .heroButtons {
+    flex-direction: row;
+  }
+}
+
+.heroFeatures {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #475569;
+  flex-wrap: wrap;
+}
+
+.heroFeature {
+  display: flex;
+  align-items: center;
+}
+
+.heroFeatureIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+  color: #2563eb;
+}
+
+.heroDecoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8rem;
+  background-color: #2563eb;
+  opacity: 0.05;
+  transform: skewY(-6deg);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 6rem 0;
+  }
+}
+
+.sectionWhite {
+  background-color: white;
+}
+
+.sectionBlue {
+  background-color: #eff6ff;
+}
+
+.sectionSlate {
+  background-color: #f8fafc;
+}
+
+.sectionBluePrimary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  margin-bottom: 0.5rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #0f172a;
+}
+
+@media (min-width: 640px) {
+  .sectionTitle {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .sectionTitle {
+    font-size: 3rem;
+  }
+}
+
+.sectionSubtitle {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  color: #475569;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .sectionSubtitle {
+    font-size: 1.25rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .gridMd2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .gridMd3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .gridMd4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridLg3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .gridLg4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.whyUsCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.whyUsIcon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #dbeafe;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.whyUsIconSvg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #2563eb;
+}
+
+.whyUsTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.whyUsDescription {
+  color: #475569;
+}
+
+.portfolioItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  group: true;
+}
+
+.portfolioImage {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolioItem:hover .portfolioImage {
+  transform: scale(1.1);
+}
+
+.portfolioOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #0f172a, transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+
+.portfolioItem:hover .portfolioOverlay {
+  opacity: 1;
+}
+
+.portfolioTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+.portfolioDescription {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.5rem;
+}
+
+.portfolioLink {
+  margin-top: 1rem;
+  color: #93c5fd;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.portfolioLink:hover {
+  color: #dbeafe;
+}
+
+.portfolioLinkIcon {
+  margin-left: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.sectionFooter {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.viewAllLink {
+  display: inline-flex;
+  align-items: center;
+  color: #2563eb;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.viewAllLink:hover {
+  color: #1e40af;
+}
+
+.viewAllIcon {
+  margin-left: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.contactFormContainer {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  color: white;
+}
+
+.ctaSubtitle {
+  color: #dbeafe;
+}
+
+.ctaButton {
+  background-color: white;
+  color: #2563eb;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.ctaButton:hover {
+  background-color: #eff6ff;
+}
+
+.ctaButton:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.ctaButtonIcon {
+  margin-left: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
