@@ -1,0 +1,220 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+/* Page Header */
+.pageHeader {
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+}
+
+.pageHeaderDecoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  background-color: white;
+  transform: skewY(-2deg);
+}
+.pageTitle {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  color: white; /* text-white */
+}
+
+@media (min-width: 768px) {
+  .pageTitle {
+    font-size: 3rem; /* md:text-5xl */
+  }
+}
+
+.pageSubtitle {
+  margin-top: 1rem; /* mt-4 */
+  font-size: 1.25rem; /* text-xl */
+  color: #dbeafe; /* text-blue-100 */
+  max-width: 42rem; /* max-w-2xl */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+}
+
+/* Section Styles */
+.section {
+  padding: 5rem 0;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.sectionSubtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  max-width: 42rem;
+  margin-bottom: 3rem;
+}
+
+/* Contact Layout */
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contactInfo {
+  padding-left: 0;
+}
+
+@media (min-width: 1024px) {
+  .contactInfo {
+    padding-left: 2rem;
+  }
+}
+
+/* Contact Info Items */
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.contactIcon {
+  margin-right: 1rem;
+  margin-top: 0.25rem;
+  color: #2563eb;
+}
+
+.contactLabel {
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.contactValue {
+  color: #475569;
+}
+
+.contactLink {
+  color: #475569;
+  transition: color 0.2s;
+}
+
+.contactLink:hover {
+  color: #2563eb;
+}
+
+/* Social Links */
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.socialLink {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+  transition: all 0.2s;
+}
+
+.socialLink:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.socialIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* FAQ Section */
+.faqContainer {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faqItem {
+  margin-bottom: 1.5rem;
+}
+
+.faqCard {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+.faqQuestion {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.faqAnswer {
+  color: #475569;
+}
+
+/* Utility Classes */
+.mb6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb8 {
+  margin-bottom: 2rem;
+}
+
+.mb12 {
+  margin-bottom: 3rem;
+}
+
+.textXl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.fontBold {
+  font-weight: 700;
+}
+
+.textBlue100 {
+  color: #dbeafe;
+}
+
+@media (min-width: 768px) {
+  .mdText5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}

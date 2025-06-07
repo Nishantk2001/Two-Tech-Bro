@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding-top: 6rem;
+  padding-top: 8rem;
   padding-bottom: 4rem;
   background: linear-gradient(to bottom right, #f8fafc, #eff6ff);
 }
@@ -26,7 +26,7 @@
 
 @media (min-width: 1024px) {
   .heroContainer {
-    padding: 0 2rem;
+    padding: 4rem 2rem;
   }
 }
 
@@ -85,7 +85,7 @@
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #475569;
   flex-wrap: wrap;
@@ -210,11 +210,11 @@
   .gridMd2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  
+
   .gridMd3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  
+
   .gridMd4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -224,7 +224,7 @@
   .gridLg3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  
+
   .gridLg4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
