@@ -2,7 +2,8 @@
   position: relative;
   padding-top: 8rem;
   padding-bottom: 4rem;
-  background: linear-gradient(to bottom right, #f8fafc, #eff6ff);
+  /* background: linear-gradient(to bottom right, #f8fafc, #eff6ff); */
+  background-image: url("../assets/img5.jpg");
 }
 
 @media (min-width: 768px) {
