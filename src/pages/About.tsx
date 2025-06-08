@@ -147,7 +147,7 @@ const About = () => {
               className={styles.teamMember}
             >
               <div className={styles.teamMemberImage}>
-                <img src="./assests/Nishantkumar.jpg" alt="Nishant Kumar" />
+                <img src="./assets/Nishantkumar.jpg" alt="Nishant Kumar" />
               </div>
               <div>
                 <h3 className={styles.teamMemberName}>Nishant Kumar</h3>
@@ -225,7 +225,7 @@ const About = () => {
               className={styles.teamMember}
             >
               <div className={styles.teamMemberImage}>
-                <img src="./assests/Satmeetsingh.jpg" alt="Satmeet singh" />
+                <img src="./assets/Satmeetsingh.jpg" alt="Satmeet singh" />
               </div>
               <div>
                 <h3 className={styles.teamMemberName}>Satmeet singh</h3>
