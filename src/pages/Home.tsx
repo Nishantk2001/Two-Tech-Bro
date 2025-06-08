@@ -85,7 +85,7 @@ const Home = () => {
       name: "Sarah Johnson",
       company: "TechStartup Inc.",
       content:
-        "Working with DevDuo was a game-changer for our company. They delivered a website that exceeded our expectations and has significantly improved our conversion rates.",
+        "Working with TwoTechBros was a game-changer for our company. They delivered a website that exceeded our expectations and has significantly improved our conversion rates.",
       image:
         "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150",
     },
@@ -94,7 +94,7 @@ const Home = () => {
       name: "Mark Williams",
       company: "Creative Agency",
       content:
-        "The team at DevDuo is incredibly talented and professional. They understood our vision perfectly and created a website that perfectly represents our brand.",
+        "The team at TwoTechBros is incredibly talented and professional. They understood our vision perfectly and created a website that perfectly represents our brand.",
       image:
         "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150",
     },
@@ -103,7 +103,7 @@ const Home = () => {
       name: "Lisa Chen",
       company: "Boutique Shop",
       content:
-        "Our e-commerce site has never looked better. DevDuo created a seamless shopping experience that our customers love. Sales have increased by 40% since the redesign!",
+        "Our e-commerce site has never looked better. TwoTechBros created a seamless shopping experience that our customers love. Sales have increased by 40% since the redesign!",
       image:
         "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150",
     },
