@@ -3,13 +3,16 @@
   padding-top: 8rem;
   padding-bottom: 4rem;
   /* background: linear-gradient(to bottom right, #f8fafc, #eff6ff); */
-  background-image: url("../assets/img5.jpg");
+  /* background: center / cover no-repeat url("./img5.jpg") ; */
 }
+
+
 
 @media (min-width: 768px) {
   .hero {
     padding-top: 8rem;
     padding-bottom: 6rem;
+    /* background:  center / cover no-repeat url("./img5.jpg") ; */
   }
 }
 
