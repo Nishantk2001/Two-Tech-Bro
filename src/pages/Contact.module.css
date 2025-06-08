@@ -65,7 +65,7 @@
 .sectionSubtitle {
   font-size: 1.25rem;
   color: #64748b;
-  max-width: 42rem;
+  /* max-width: 42rem; */
   margin-bottom: 3rem;
 }
 

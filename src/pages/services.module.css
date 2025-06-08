@@ -53,7 +53,7 @@
   max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
-  color: #e2e8f0;
+  color: #475569;
 }
 
 /* Services Grid */
@@ -141,11 +141,11 @@
 }
 
 .metaLabel {
-  color: #64748b;
+  color: #1e293b;
 }
 
 .metaValue {
-  color: #1e293b;
+  color: #64748b;
   font-weight: 500;
 }
 

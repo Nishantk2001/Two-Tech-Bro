@@ -124,10 +124,10 @@ const Contact = () => {
                     <h3 className={styles.contactLabel}>Email</h3>
                     <p className={styles.contactValue}>
                       <a
-                        href="mailto:hello@devduo.com"
+                        href="mailto:twotechbro@gmail.com"
                         className={styles.contactLink}
                       >
-                        hello@devduo.com
+                        twotechbro@gmail.com
                       </a>
                     </p>
                   </div>
@@ -140,8 +140,12 @@ const Contact = () => {
                   <div>
                     <h3 className={styles.contactLabel}>Phone</h3>
                     <p className={styles.contactValue}>
-                      <a href="tel:+1234567890" className={styles.contactLink}>
-                        +1 (234) 567-890
+                      <a href="tel:8219148539" className={styles.contactLink}>
+                        (+91) 82191 48539
+                      </a>
+                      &nbsp;&nbsp;
+                      <a href="tel:9464032520" className={styles.contactLink}>
+                        (+91) 9464032520
                       </a>
                     </p>
                   </div>
@@ -154,9 +158,9 @@ const Contact = () => {
                   <div>
                     <h3 className={styles.contactLabel}>Location</h3>
                     <p className={styles.contactValue}>
-                      San Francisco, CA
+                      Mohali, Punjab
                       <br />
-                      United States
+                      India
                     </p>
                   </div>
                 </div>
@@ -168,9 +172,9 @@ const Contact = () => {
                   <div>
                     <h3 className={styles.contactLabel}>Working Hours</h3>
                     <p className={styles.contactValue}>
-                      Monday - Friday: 9am - 6pm PST
+                      Monday - Saturday : 9am - 11pm IST
                       <br />
-                      Weekend: Closed
+                      Sunday: Closed
                     </p>
                   </div>
                 </div>
