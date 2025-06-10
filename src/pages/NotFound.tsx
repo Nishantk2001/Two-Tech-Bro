@@ -13,7 +13,7 @@ const NotFound = () => {
         className={styles.content}
       >
         <h1 className={styles.errorCode}>404</h1>
-        <h2 className={styles.title}>Page Not Found</h2>
+        <h2 className={styles.title}>Page Not Found </h2>
         <p className={styles.message}>
           Sorry, the page you are looking for doesn't exist or has been moved.
         </p>

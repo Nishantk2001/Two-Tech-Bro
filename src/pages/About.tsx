@@ -72,8 +72,12 @@ const About = () => {
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     },
     {
-      name: "JS", // Assuming "JS" refers to JavaScript
+      name: "JavaScript",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    },
+    {
+      name: "Mysql",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
     },
     {
       name: "Figma",
@@ -81,20 +85,41 @@ const About = () => {
     },
     {
       name: "Canva",
-      logo: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/canva.svg", // Canva is not in devicons, using simple-icons
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg",
     },
     {
       name: "Wix",
-      logo: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/wix.svg", // Wix is not in devicons, using simple-icons
+      logo: "https://api.iconify.design/logos:wix.svg",
     },
     {
       name: "WordPress",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
+      logo: "https://api.iconify.design/logos:wordpress-icon.svg",
     },
     {
-      name: "Shopify",
-      logo: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/shopify.svg", // Shopify is not in devicons, using simple-icons
+      name: "C#",
+      logo: "https://api.iconify.design/logos:c-sharp.svg",
     },
+    {
+      name: "Express",
+      logo: "https://api.iconify.design/logos:express.svg",
+    },
+    {
+      name: "API",
+      logo: "https://api.iconify.design/mdi:api.svg",
+    },
+    {
+      name: "Adobe Photoshop",
+      logo: "https://api.iconify.design/logos:adobe-photoshop.svg",
+    },
+    {
+      name: "Adobe Illustrator",
+      logo: "https://api.iconify.design/logos:adobe-illustrator.svg",
+    },
+    {
+      name: "Vercel",
+      logo: "https://api.iconify.design/logos:vercel-icon.svg",
+    },
+    { name: "Shopify", logo: "https://api.iconify.design/logos:shopify.svg" },
   ];
 
   return (
