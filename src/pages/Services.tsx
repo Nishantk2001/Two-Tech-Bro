@@ -8,6 +8,9 @@ import {
   Search,
   Wrench,
   Server,
+  LayoutDashboard,
+  Megaphone,
+  Brush,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import styles from "./services.module.css";
@@ -122,6 +125,51 @@ const Services = () => {
       ],
       timeline: "4-8 weeks",
       technologies: "Node.js, Express, .NET, MongoDB, PostgreSQL",
+    },
+    {
+      id: 7,
+      title: "Low Code / No Code Solutions",
+      description:
+        "We create fast, scalable websites using low-code or no-code platforms, perfect for small businesses and MVPs.",
+      icon: <LayoutDashboard className="w-12 h-12 text-blue-600" />,
+      features: [
+        "Quick setup and deployment",
+        "Drag-and-drop editing for clients",
+        "Third-party plugin integration",
+        "Scalable design for growing needs",
+      ],
+      timeline: "1-2 weeks",
+      technologies: "Wix, Webflow, Canva, Notion Sites",
+    },
+    {
+      id: 8,
+      title: "Landing Pages & Ads",
+      description:
+        "We design high-converting landing pages and digital ads tailored for marketing campaigns and lead generation.",
+      icon: <Megaphone className="w-12 h-12 text-blue-600" />,
+      features: [
+        "Conversion-optimized layout",
+        "A/B testing for performance",
+        "Integrated lead capture forms",
+        "Ad creative design for Google & Meta",
+      ],
+      timeline: "1-3 weeks",
+      technologies: "Next.js, Google Ads, Meta Ads, Figma",
+    },
+    {
+      id: 9,
+      title: "Graphic Design",
+      description:
+        "We deliver stunning visual designs that align with your brand and leave a lasting impression.",
+      icon: <Brush className="w-12 h-12 text-blue-600" />,
+      features: [
+        "Logo and brand identity design",
+        "Social media creatives",
+        "Marketing banners and brochures",
+        "Custom illustrations and icons",
+      ],
+      timeline: "1-3 weeks",
+      technologies: "Adobe Photoshop, Illustrator, Canva, Figma",
     },
   ];
 
