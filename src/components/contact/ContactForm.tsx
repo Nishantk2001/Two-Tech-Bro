@@ -4,10 +4,10 @@ import { Send } from "lucide-react";
 import styles from "./ContactForm.module.css";
 
 interface FormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
+  Name: string;
+  Email: string;
+  Subject: string;
+  Message: string;
 }
 
 const ContactForm = () => {
@@ -22,22 +22,35 @@ const ContactForm = () => {
   } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
-    setIsSubmitting(true);
+    try {
+       setIsSubmitting(true);
+       const response = await fetch("https://my-proxy-api.onrender.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+      if (!response.ok) throw new Error("Network error");
+      const result = await response.json();
+      console.log("Form submitted:", result);
+      if (result.result === "success") {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+        reset(); // clears the form
+      } else {
+        console.error("Error from server:", result);
+        setIsSubmitting(false);
+      }        
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 5000);
+    }catch (err){
+      console.error("Fetch error:", err);
+      setIsSubmitting(false);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    // For demonstration purposes - in a real app, this would be an API call
-    console.log("Form submitted:", data);
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    reset();
-
-    // Reset success message after 5 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-    }, 5000);
+    }
   };
 
   return (
@@ -58,11 +71,11 @@ const ContactForm = () => {
         <input
           id="name"
           type="text"
-          className={`${styles.input} ${errors.name ? styles.inputError : ""}`}
+          className={`${styles.input} ${errors.Name ? styles.inputError : ""}`}
           placeholder="Name"
-          {...register("name", { required: "Name is required" })}
+          {...register("Name", { required: "Name is required" })}
         />
-        {errors.name && <p className={styles.error}>{errors.name.message}</p>}
+        {errors.Name && <p className={styles.error}>{errors.Name.message}</p>}
       </div>
 
       <div className={styles.field}>
@@ -72,9 +85,9 @@ const ContactForm = () => {
         <input
           id="email"
           type="email"
-          className={`${styles.input} ${errors.email ? styles.inputError : ""}`}
+          className={`${styles.input} ${errors.Email ? styles.inputError : ""}`}
           placeholder="twotech@example.com"
-          {...register("email", {
+          {...register("Email", {
             required: "Email is required",
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -82,7 +95,7 @@ const ContactForm = () => {
             },
           })}
         />
-        {errors.email && <p className={styles.error}>{errors.email.message}</p>}
+        {errors.Email && <p className={styles.error}>{errors.Email.message}</p>}
       </div>
 
       <div className={styles.field}>
@@ -93,13 +106,13 @@ const ContactForm = () => {
           id="subject"
           type="text"
           className={`${styles.input} ${
-            errors.subject ? styles.inputError : ""
+            errors.Subject ? styles.inputError : ""
           }`}
           placeholder="Project Inquiry"
-          {...register("subject", { required: "Subject is required" })}
+          {...register("Subject", { required: "Subject is required" })}
         />
-        {errors.subject && (
-          <p className={styles.error}>{errors.subject.message}</p>
+        {errors.Subject && (
+          <p className={styles.error}>{errors.Subject.message}</p>
         )}
       </div>
 
@@ -110,10 +123,10 @@ const ContactForm = () => {
         <textarea
           id="message"
           className={`${styles.textarea} ${
-            errors.message ? styles.textareaError : ""
+            errors.Message ? styles.textareaError : ""
           }`}
           placeholder="Tell us about your project..."
-          {...register("message", {
+          {...register("Message", {
             required: "Message is required",
             minLength: {
               value: 20,
@@ -121,8 +134,8 @@ const ContactForm = () => {
             },
           })}
         ></textarea>
-        {errors.message && (
-          <p className={styles.error}>{errors.message.message}</p>
+        {errors.Message && (
+          <p className={styles.error}>{errors.Message.message}</p>
         )}
       </div>
 
